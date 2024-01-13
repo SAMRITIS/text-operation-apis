@@ -1,7 +1,7 @@
 ## Installation
 
 ````bash
-git clone https://github.com/SAMRITIS/text-operation-apis
+git clone git@github.com:SAMRITIS/text-operation-apis.git
 Docker
 bash
 
@@ -63,7 +63,7 @@ $ npm run migration:revert
 
 Postman collections url is `https://api.postman.com/collections/24410382-19d8a6b3-1b3c-456e-bac2-73b47c471d3e?access_key=PMAT-01HM1DQ6JKPQMHR1RMY5SSVKTW` import it into your postman.
 
-# Upload File
+### Upload File
 
 Method: POST
 Endpoint: http://localhost:3000/file
@@ -76,7 +76,7 @@ json
 "message": "Successfully file uploaded"
 }
 
-# Create Task
+### Create Task
 
 Method: POST
 Endpoint: http://localhost:3000/task
@@ -94,7 +94,7 @@ Response: JSON
 "type": "count-word"
 }
 
-# Get Task
+### Get Task
 
 Method: GET
 Endpoint: http://localhost:3000/task/:taskUuid
@@ -153,10 +153,10 @@ ADD
 
 ## Database View
 
-Download Beekeeper Studio and select postgreSql connection and connect on below config
+Download Beekeeper Studio select PostgreSQL connection and connect on the below config
 
-HOST=localhost
-PORT=5432
-NAME=boxer
-USER=pguser
-PASSWORD=password
+HOST=localhost,
+PORT=5432,
+NAME=boxer,
+USER=pguser,
+PASSWORD=password,
