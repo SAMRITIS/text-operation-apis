@@ -1,0 +1,5 @@
+1. Payment method reference id is required in case of cash it's optional.
+2. Estimate is required lineitems from where we will get it.
+    sku not found error, bundled product not found
+3. Design is required. After sync need to check. 
+    Designing is missing inverter, modules, design array does't match with quantity of modules.
