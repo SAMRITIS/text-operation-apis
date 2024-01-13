@@ -63,7 +63,7 @@ $ npm run migration:revert
 
 Postman collections url is `https://api.postman.com/collections/24410382-19d8a6b3-1b3c-456e-bac2-73b47c471d3e?access_key=PMAT-01HM1DQ6JKPQMHR1RMY5SSVKTW` import it into your postman.
 
-### Upload File
+## Upload File
 
 Method: POST
 Endpoint: http://localhost:3000/file
@@ -71,35 +71,35 @@ Body: Formdata with a file parameter.
 Response: JSON
 json
 
-{
+`{
 "uuid": "14627225-c9b1-437c-a706-e92724be331e",
 "message": "Successfully file uploaded"
-}
+}`
 
-### Create Task
+## Create Task
 
 Method: POST
 Endpoint: http://localhost:3000/task
 Body: JSON
-{
+`{
 "fileUuid": "14627225-c9b1-437c-a706-e92724be331e",
 "kWord": 3,
 "type": "count-word"
-}
+}`
 
 Response: JSON
-{
+`{
 "fileUuid": "14627225-c9b1-437c-a706-e92724be331e",
 "kWord": 3,
 "type": "count-word"
-}
+}`
 
-### Get Task
+## Get Task
 
 Method: GET
 Endpoint: http://localhost:3000/task/:taskUuid
 Response: JSON
-{
+`{
 "id": 21,
 "name": "top-k-word",
 "uuid": "66981cdf-4c63-4beb-af82-9c3a29c2eaee",
@@ -107,7 +107,7 @@ Response: JSON
 "result": "{"hi":1,"is":4,"required":3,"design":2,"found":2,"modules":2,"not":2,"of":2}",
 "createdAt": "2024-01-13T05:22:03.435Z",
 "updatedAt": "2024-01-13T05:22:03.435Z"
-}
+}`
 
 ## File Table Query
 
@@ -155,8 +155,8 @@ ADD
 
 Download Beekeeper Studio select PostgreSQL connection and connect on the below config
 
-HOST=localhost,
+`HOST=localhost,
 PORT=5432,
 NAME=boxer,
 USER=pguser,
-PASSWORD=password,
+PASSWORD=password,`
